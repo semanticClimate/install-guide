@@ -23,12 +23,16 @@
     --heading-h3-border-style: solid;
     --heading-h3-font-size: 1.6rem; /*var(--font-size-l)*/
     --heading-h3-font-weight: 400;
+    --heading-h3-color                                : #366DC2;
     --heading-h4-border-style: solid;
     --heading-h4-font-size: 1.3rem; /*var(--font-size-m)*/
+    --heading-h4-color                                : #366DC2;
     --heading-h4-font-weight: 500;
     --heading-h5-font-size: 1.1rem; /*var(--font-size-s)*/
     --heading-h5-font-weight: 500;
+    --heading-h5-color                                : #366DC2;
     --heading-h6-font-size: 0.9rem; /*var(--font-size-xs)*/
+    --heading-h6-color                                : #366DC2;
     --sidebar-nav-link-font-weight--active            : bold;
     --sidebar-border-color                            : #00AEEF;
     --sidebar-nav-link-border-color--active           : #00AEEF;
@@ -106,11 +110,34 @@ background-repeat: no-repeat;*/
   margin-top: 1.5em;
   content:"";
   }
-.content h2.booksubtitle, .content h3.bookauthor,  .content h4.bookversion {
-color: #366DC2;
+.content h2.booksubtitle, .content h3.bookauthor {
+font-family: "Segoe UI", sans-serif;
 font-weight: 400;
 margin: 0;
 border: none;
+color: #366DC2!important;
+}
+
+h4.bookversion {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+  color: #366DC2!important;
+  font-weight: 400;
+  padding-top: 1em!important;
+  margin: 0;
+  text-align: left!important;
+}
+
+h1.part:before {
+  display: block;
+  text-transform: none;
+  counter-increment: chapter;
+  height: 1em;
+  background-image: linear-gradient(45deg, #366DC2,#366DC2)!important;
+  background-repeat: no-repeat;
+  background-size: 80px 9px;
+  background-position: 0% 0%;
+  content:"";
 }
 
 .content .article-body {
@@ -340,10 +367,10 @@ color: var(--base-color);
   border-color: var(--link-border-color);
 }
 .markdown-section tbody tr:nth-child(odd) {
-  background-color: #F2F2F2;
+  background-color: #F5F4EF;
 }
 .markdown-section tbody tr:nth-child(even) {
-  background-color: #8893C5;
+  background-color: #EAEFEE;
 }*/
 .content .markdown-section table caption, .content .markdown-section figure figcaption {
     font-size: 0.9rem;
