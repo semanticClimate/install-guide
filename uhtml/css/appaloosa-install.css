@@ -278,7 +278,7 @@
   
   div.titlepage {
     height: 100vh;
-    background-image: url("media/media/qr.png");
+    background-image: url("media/qr.png");
     /*-webkit-filter: drop-shadow( -5px 5px 5px rgb(165, 165, 165) );
     filter: drop-shadow( -5px 5px 5px rgb(146, 8, 8)); */
     background-position: 0% 100%;
